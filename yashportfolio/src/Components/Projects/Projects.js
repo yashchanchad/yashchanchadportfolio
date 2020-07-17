@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectsCard from "./ProjectsCard";
 
-export default function Projects() {
+export default function Projects({id}) {
     let projects = [
         {
             id: 1,
@@ -18,7 +18,7 @@ export default function Projects() {
     ]
 
     return(
-        <div className="container">
+        <div id = {id} className="container">
             {projects && projects.map(project => (
                 <ProjectsCard project={project} key={project.id}/>
             ))}

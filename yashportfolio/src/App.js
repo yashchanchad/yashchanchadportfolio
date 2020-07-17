@@ -1,25 +1,28 @@
-import React, {useEffect} from 'react';
-import Navbar from "./Components/Navbar/Navbar";
+import React from 'react';
+import Navigationbar from "./Components/Navbar/Navigationbar";
 import Projects from "./Components/Projects/Projects";
 import Education from "./Components/Education/Education";
 import ContactMe from "./Components/Contact/ContactMe";
+import Home from "./Components/Home/Home";
 
 function App() {
 
-    useEffect(() => {
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.scrollspy');
-            document.M.ScrollSpy.init(elems, {});
-        });
-    })
-
     return (
         <div className="App">
-            <Navbar/>
-            <h1> Yash Chanchad Welcomes you! </h1>
-            <Projects/>
-            <Education/>
-            <ContactMe/>
+
+            <Navigationbar/>
+            <Home
+                id = "Home"
+            />
+            <Projects
+                id="Projects"
+            />
+            <Education
+                id="Education"
+            />
+            <ContactMe
+                id="ContactMe"
+            />
             <footer className="center"> Designed By Yash Chanchad. </footer>
         </div>
     );

@@ -2,9 +2,9 @@ import React from "react";
 import ContactDetails from "./ContactDetails";
 import ContactForm from "./ContactForm";
 
-export default function ContactMe() {
+export default function ContactMe({id}) {
     return(
-        <div className="row">
+        <div id = {id} className="row">
             <div className="col s12 m6">
                 <ContactDetails/>
             </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import EducationCard from "./EducationCard";
 
-export default function Education() {
+export default function Education({id}) {
     let educations = [
         {
             id: "1",
@@ -18,7 +18,7 @@ export default function Education() {
     ]
 
     return(
-        <div id="EducationSection" className="section scrollspy">
+        <div id={ id } className="section scrollspy" >
             { educations && educations.map(education => (
                 <EducationCard education={education} key={education.id}/>
             ))}
