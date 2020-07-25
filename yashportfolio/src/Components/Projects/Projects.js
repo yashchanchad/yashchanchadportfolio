@@ -52,7 +52,7 @@ export default function Projects({id}) {
     ]
 
     return(
-        <div className="mt-sm-5 pt-sm-5">
+        <div className="mt-sm-5 mt-lg-0 pt-5">
             <div id={id} className="d-flex  min-vh-100">
                 <div className="container-fluid text-center my-auto">
                     <h2>Projects</h2>

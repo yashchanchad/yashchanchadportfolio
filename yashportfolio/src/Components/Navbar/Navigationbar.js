@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
-
 import { Link } from "react-scroll"
+import Logo from "../../img/logo_transparent.png"
 
 export default function Navigationbar() {
 
@@ -9,11 +9,17 @@ export default function Navigationbar() {
         window.M.Sidenav.init(sidenav, {});
     }, [])
 
+
     return (
         <div>
             <div className="navbar-fixed">
-                <nav className="nav-wrapper blue-grey darken-3">
-                    <a href="/" className="brand-logo">Logo</a>
+                <nav className="nav-wrapper light-blue darken-4">
+                    <a href="localhost:3000/" className="brand-logo pl-lg-5">
+                        <img style={{maxWidth:50+"px"}} src={Logo} alt="Yash's Logo"/>
+                        {/*<button className="btn">*/}
+                        {/*    YASH*/}
+                        {/*</button>*/}
+                    </a>
                     <a href="http://localhost:3000" data-target="mobileMenu" className="sidenav-trigger">
                         <i className="material-icons">menu</i>
                     </a>
@@ -29,7 +35,7 @@ export default function Navigationbar() {
                                 offset={-20}
                                 duration={500}
                             >
-                                Home
+                                About
                             </Link>
                         </li>
                         <li className="nav-item">
@@ -50,7 +56,7 @@ export default function Navigationbar() {
                                 to="Projects"
                                 spy={true}
                                 smooth={true}
-                                offset={-60}
+                                offset={-100}
                                 duration={500}
                             >
                                 Projects
@@ -65,7 +71,7 @@ export default function Navigationbar() {
                                 offset={-60}
                                 duration={500}
                             >
-                                Experience
+                                Work Experience
                             </Link>
                         </li>
                         <li className="nav-item">
@@ -74,24 +80,25 @@ export default function Navigationbar() {
                                 to="ContactMe"
                                 spy={true}
                                 smooth={true}
-                                offset={-60}
+                                // offset={-80}
                                 duration={500}
                             >
                                 Contact
                             </Link>
                         </li>
-                        <li className="nav-item">
-                            <Link
-                                activeClass="active"
-                                to="#"
-                                spy={true}
-                                smooth={true}
-                                offset={-60}
-                                duration={500}
-                            >
-                                Resume
-                            </Link>
-                        </li>
+                        {/*<li className="nav-item light-green">*/}
+                        {/*    <button className="light-green py-0 px-3" onClick={downloadEmployeeData}> Resume </button>*/}
+                        {/*    /!*<Link*!/*/}
+                        {/*    /!*    activeClass="active"*!/*/}
+                        {/*    /!*    to="#"*!/*/}
+                        {/*    /!*    spy={true}*!/*/}
+                        {/*    /!*    smooth={true}*!/*/}
+                        {/*    /!*    offset={-60}*!/*/}
+                        {/*    /!*    duration={500}*!/*/}
+                        {/*    /!*>*!/*/}
+                        {/*    /!*    Resume*!/*/}
+                        {/*    /!*</Link>*!/*/}
+                        {/*</li>*/}
                     </ul>
                 </nav>
             </div>
@@ -105,7 +112,7 @@ export default function Navigationbar() {
                         offset={-60}
                         duration={500}
                     >
-                        Home
+                        About
                     </Link>
                 </li>
                 <li className="nav-item sidenav-close">
@@ -114,7 +121,7 @@ export default function Navigationbar() {
                         to="Education"
                         spy={true}
                         smooth={true}
-                        offset={-60}
+                        offset={-70}
                         duration={500}
                     >
                         Education
@@ -126,7 +133,7 @@ export default function Navigationbar() {
                         to="Projects"
                         spy={true}
                         smooth={true}
-                        offset={-60}
+                        offset={-70}
                         duration={500}
                     >
                         Projects
@@ -138,10 +145,10 @@ export default function Navigationbar() {
                         to="Experience"
                         spy={true}
                         smooth={true}
-                        offset={-60}
+                        offset={-70}
                         duration={500}
                     >
-                        Experience
+                        Work Experience
                     </Link>
                 </li>
                 <li className="nav-item sidenav-close">
@@ -150,26 +157,13 @@ export default function Navigationbar() {
                         to="ContactMe"
                         spy={true}
                         smooth={true}
-                        offset={-60}
+                        // offset={-60}
                         duration={500}
                     >
                         Contact
                     </Link>
                 </li>
-                <li className="nav-item sidenav-close">
-                    <Link
-                        activeClass="active"
-                        to="#"
-                        spy={true}
-                        smooth={true}
-                        offset={-60}
-                        duration={500}
-                    >
-                        Resume
-                    </Link>
-                </li>
             </ul>
         </div>
-
     );
 }

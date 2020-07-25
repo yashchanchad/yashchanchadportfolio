@@ -37,10 +37,10 @@ export default function Projects({id}) {
     ]
 
     return(
-        <div className="mb-sm-5 mb-lg-0 pt-sm-5 pt-md-5 pt-lg-n5">
+        <div className="mb-sm-5 mb-lg-0 pt-5">
             <div id={id} className="d-flex min-vh-100 ">
                 <div className="container-fluid text-center my-auto">
-                    <h2>Experience</h2>
+                    <h2>Work Experience</h2>
                     <div className="row">
                         {experiences && experiences.map((experience) => (
                             <div className="col-12"  key={experience.id}>

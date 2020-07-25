@@ -30,7 +30,7 @@ export default function Education({id}) {
     ]
 
     return(
-        <div className="mb-sm-5 mb-lg-0 mt-sm-5 mt-md-5 mt-lg-n5">
+        <div className="mb-sm-5 mb-lg-0 pt-5">
             <div id={id} className="d-flex  min-vh-100 mt-lg-n5">
                 <div className="container-fluid text-center my-auto">
                     <h2>Education</h2>

@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.facebook, a.facebook:hover {
+  color: #4968ad;
+}
+
+a.linkedin, a.linkedin:hover {
+  color: #0077B5;
+}
+
+a.github, a.github:hover{
+  color: black;
+}
+
+a.instagram, a.instagram:hover{
+  color: black;
+}
