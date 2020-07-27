@@ -7,7 +7,7 @@ export default function Education({id}) {
             id: "1",
             university: "University fo Southern California",
             departmentName: "Viterbi School of Engineering",
-            timeline: "Fall 2019 to May 2021",
+            timeline: "August 2019 to Spring 2021",
             Courses: [
                 {code: 'INF553', name: "Foundations and Applications of Data Mining"},
                 {code: 'CSCI570', name: "Analysis of Algorithms"},
@@ -21,9 +21,22 @@ export default function Education({id}) {
             id: "2",
             university: "Charotar University of Science and Technology",
             departmentName: "Chandubhai S. Patel Institute of Technology",
-            timeline: "Fall 2015 to May 2019",
+            timeline: "July 2015 to May 2019",
             Courses: [
-                {code: 'CE103', name: "Basics of Computation"}
+                {code: 'CE201.02', name: "Data Structures and Algorithms"},
+                {code: 'CE219.01', name: "Object Oriented Programming using Java"},
+                {code: 'CE220.01', name: "Software Engineering"},
+                {code: 'CE221.01', name: "Operating System"},
+                {code: 'CE312.00', name: "Web Programming"},
+                {code: 'CE313.00', name: "System Software"},
+                {code: 'CE314.00', name: "Advanced Database Management System"},
+                {code: 'CE315.00', name: "Design and Analysis of Algorithm"},
+                {code: 'CE316.00', name: "Artificial Intelligence"},
+                {code: 'CE306.01', name: "Theory of Computation"},
+                {code: 'CE320.00', name: "Computer Network & Internetworking Layers"},
+                {code: 'CE321.00', name: "Cryptography and Network Security"},
+                {code: 'CE322.00', name: "Data Warehouse and Data Mining"},
+                {code: 'CE323.00', name: "Advanced Web Technology"},
             ],
             GPA: "9.0"
         }
@@ -31,7 +44,7 @@ export default function Education({id}) {
 
     return(
         <div className="mb-sm-5 mb-lg-0 pt-5">
-            <div id={id} className="d-flex  min-vh-100 mt-lg-n5">
+            <div id={id} className="d-flex  min-vh-100">
                 <div className="container-fluid text-center my-auto">
                     <h2>Education</h2>
                     <div className="row text-left">
@@ -43,7 +56,6 @@ export default function Education({id}) {
                     </div>
                 </div>
             </div>
-            {/*<div className="divider grey"/>*/}
         </div>
     );
 }

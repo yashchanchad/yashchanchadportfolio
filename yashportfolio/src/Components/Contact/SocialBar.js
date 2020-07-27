@@ -6,18 +6,10 @@ import {
     faInstagram,
     faGithub
 } from "@fortawesome/free-brands-svg-icons";
-// import faGmail from "../../img/gmail.svg"
 
 export default function SocialBar() {
     return(
         <div>
-            {/*<a*/}
-            {/*    href = "mailto:yashchanchad.com"*/}
-            {/*    className = "google social px-2"*/}
-            {/*    target="_blank"*/}
-            {/*>*/}
-            {/*    <FontAwesomeIcon icon={faGmail} size="3x" />*/}
-            {/*</a>*/}
             <a
                 href = "https://www.linkedin.com/in/yashchanchad"
                 className = "linkedin social px-2 pb-sm-5"

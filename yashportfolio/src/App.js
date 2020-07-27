@@ -19,18 +19,16 @@ function App() {
                     id = "Home"
                 />
                 <Divider/>
-                <div className="mt-sm-5">
-                    <Education
-                        id="Education"
-                    />
-                </div>
-                <Divider/>
-                <Projects
-                    id="Projects"
+                <Education
+                    id="Education"
                 />
                 <Divider/>
                 <Experience
                     id="Experience"
+                />
+                <Divider/>
+                <Projects
+                    id="Projects"
                 />
                 <Divider/>
                 <ContactMe

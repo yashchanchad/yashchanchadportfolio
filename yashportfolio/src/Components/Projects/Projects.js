@@ -9,7 +9,7 @@ export default function Projects({id}) {
             description: [
                 "Used Flask with Node.js in the backend to fetch search results from eBay APIs, which worked as a proxy server.",
                 "Designed frontend in Angular and used Bootstrap 4 to make website responsive, further deployed it on GCP.",
-                "Developed an Android application for the users to search for products available on eBay along with their details."
+                "Built an Android application for the users to search for products available on eBay along with product details."
             ],
             timeline: "May 2020 to June 2020"
         },
@@ -18,7 +18,7 @@ export default function Projects({id}) {
             title: "Recommendation System",
             description: [
                 "Combined model-based and item-based collaborative filtering method for predicting ratings of Business IDs and User IDs based on Yelp Dataset.",
-                "Used the Default voting technique for training the item-based model to eliminate the problem of missing data."
+                "Utilized the Default Voting technique for training item-based model to eliminate problem of missing data in dataset."
             ],
             timeline: "February 2020 to March 2020"
         },
@@ -33,13 +33,22 @@ export default function Projects({id}) {
         },
         {
             id: 2,
-            title: "Home Automation using Alexa",
+            title: "Enterprise Resource Planning",
             description: [
-                "Created Python Script, to turn on/off lights using a trigger “Turn on/off the light”; also linked necessary accounts together for interoperability.",
-                "Executed by connecting various devices and modifying Python Script; Alexa also works as virtual personal assistant."
+                "Created application for live visibility of whole manufacturing pipeline, increased productivity of employees by 2x.",
+                "Optimized stock management feature to improved inventory utilization by eliminate dead stock."
             ],
-            timeline: "September 2018 to November 2018"
+            timeline: "August 2019 to October 2019"
         },
+        // {
+        //     id: 2,
+        //     title: "Home Automation using Alexa",
+        //     description: [
+        //         "Created Python Script, to turn on/off lights using a trigger “Turn on/off the light”; also linked necessary accounts together for interoperability.",
+        //         "Executed by connecting various devices and modifying Python Script; Alexa also works as virtual personal assistant."
+        //     ],
+        //     timeline: "September 2018 to November 2018"
+        // },
         {
             id: 1,
             title: "BYS Security System",
@@ -56,6 +65,7 @@ export default function Projects({id}) {
             <div id={id} className="d-flex  min-vh-100">
                 <div className="container-fluid text-center my-auto">
                     <h2>Projects</h2>
+                    <br/>
                     <div className="row">
                         {projects && projects.map((project) => (
                             <div className="col-12" key={project.id}>
@@ -65,7 +75,6 @@ export default function Projects({id}) {
                     </div>
                 </div>
             </div>
-            {/*<div className="divider grey"/>*/}
         </div>
     );
 }

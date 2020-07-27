@@ -3,21 +3,22 @@ import ExperienceCard from "./ExperienceCard";
 
 export default function Projects({id}) {
     let experiences = [
-
         {
             id: 3,
             title: "CoSAFE",
             location: "USA",
+            position: "Software Development Intern",
             description: [
-                "Leaded team and devised a scalable web application in React with Redux Data Store.",
-                "Fetched data from Firestore and integrated it with Maps API to display the details like Safety Score of restaurants."
+                "Lead a team of application developers and develop a progressive web application in React with Redux Data Store.",
+                "Design NoSQL database and integrate data with Google Maps API to display Safety Score and details of restaurant."
             ],
-            timeline: "June 2020 to August 2020"
+            timeline: "June 2020 to Present"
         },
         {
             id: 2,
             title: "Aspirebit Technolab",
             location: "India",
+            position: "Software Development Intern",
             description: [
                 "Developed a scalable web application and database for Video Status Application in PHP and MySQL, respectively.",
                 "Created API in PHP for Mobile Applications to retrieve and update data: acted as team leader of the project."
@@ -28,6 +29,7 @@ export default function Projects({id}) {
             id: 1,
             title: "Aspirebit Technolab",
             location: "India",
+            position: "Web Development Intern",
             description: [
                 "Managed databases in MySQL and analyzed customers’ feedbacks to provide insights to marketing team.",
                 "Redesigned web application by extracting insightful data from customers’ feedback, results in increment of new users."
@@ -41,6 +43,7 @@ export default function Projects({id}) {
             <div id={id} className="d-flex min-vh-100 ">
                 <div className="container-fluid text-center my-auto">
                     <h2>Work Experience</h2>
+                    <br/>
                     <div className="row">
                         {experiences && experiences.map((experience) => (
                             <div className="col-12"  key={experience.id}>
@@ -50,7 +53,6 @@ export default function Projects({id}) {
                     </div>
                 </div>
             </div>
-            {/*<div className="divider grey"/>*/}
         </div>
     );
 }
